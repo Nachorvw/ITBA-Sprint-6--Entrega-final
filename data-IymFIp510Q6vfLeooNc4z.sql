@@ -1,4 +1,4 @@
-INSERT INTO `indi` (`indi`)
+INSERT INTO `indi` (`tipo_de_cuenta`)
 VALUES
   (3),
   (2),
@@ -50,7 +50,7 @@ VALUES
   (5),
   (4),
   (4);
-INSERT INTO `indi` (`indi`)
+INSERT INTO `indi` (`tipo_de_cuenta`)
 VALUES
   (1),
   (5),
@@ -102,7 +102,7 @@ VALUES
   (3),
   (1),
   (3);
-INSERT INTO `indi` (`indi`)
+INSERT INTO `indi` (`tipo_de_cuenta`)
 VALUES
   (2),
   (3),
@@ -154,7 +154,7 @@ VALUES
   (2),
   (5),
   (4);
-INSERT INTO `indi` (`indi`)
+INSERT INTO `indi` (`tipo_de_cuenta`)
 VALUES
   (1),
   (4),
@@ -206,7 +206,7 @@ VALUES
   (5),
   (4),
   (5);
-INSERT INTO `indi` (`indi`)
+INSERT INTO `indi` (`tipo_de_cuenta`)
 VALUES
   (2),
   (3),
@@ -258,7 +258,7 @@ VALUES
   (4),
   (3),
   (5);
-INSERT INTO `indi` (`indi`)
+INSERT INTO `indi` (`tipo_de_cuenta`)
 VALUES
   (1),
   (4),
@@ -310,7 +310,7 @@ VALUES
   (2),
   (4),
   (2);
-INSERT INTO `indi` (`indi`)
+INSERT INTO `indi` (`tipo_de_cuenta`)
 VALUES
   (4),
   (2),
@@ -362,7 +362,7 @@ VALUES
   (2),
   (4),
   (4);
-INSERT INTO `indi` (`indi`)
+INSERT INTO `indi` (`tipo_de_cuenta`)
 VALUES
   (4),
   (3),
@@ -414,7 +414,7 @@ VALUES
   (2),
   (3),
   (2);
-INSERT INTO `indi` (`indi`)
+INSERT INTO `indi` (`tipo_de_cuenta`)
 VALUES
   (5),
   (2),
@@ -466,7 +466,7 @@ VALUES
   (2),
   (3),
   (2);
-INSERT INTO `indi` (`indi`)
+INSERT INTO `indi` (`tipo_de_cuenta`)
 VALUES
   (3),
   (5),

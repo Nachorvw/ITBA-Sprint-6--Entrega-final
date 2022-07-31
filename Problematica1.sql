@@ -60,11 +60,22 @@ CREATE TABLE direcciones (
 	CONSTRAINT fk_sucur FOREIGN key (sucur) REFERENCES sucursal(branch_id)
 );
 
+------------------- modificando fechas --------------
+UPDATE empleado 
+SET employee_hire_date = (substr(employee_hire_date, 7, 4) || '-' || substr(employee_hire_date, 4, 2) || '-' || substr(employee_hire_date, 1, 2)) 
+
+------------------------insertando los tipos de cuneta -----------------------------
+ALTER TABLE cuenta add tipo;
+insert tabla indi 
+(
+    tipo_de_cuenta INTEGER
+)
+
 ALTER TABLE cuenta add tipo_de_cuenta;
 
 alter TABLE cuenta RENAME to cuenta2
 
-drop TABLE cuenta
+drop TABLE cuenta;
 
 CREATE TABLE cuenta (
 	account_id INTEGER not NULL PRIMARY key,
@@ -77,7 +88,7 @@ CREATE TABLE cuenta (
 );
 
 CREATE TABLE indi (
-	indi INTEGER
+	tipo_de_cuenta INTEGER
 );
 
 ------------------- inserto tipos en la tabla indi -----------------
@@ -89,6 +100,10 @@ SELECT cuenta2.account_id,cuenta2.customer_id,cuenta2.balance,cuenta2.iban,indi2
 
 
 
-
-
+--------------------- --------------------
+ALTER TABLE cuenta add tipo;
+insert tabla indi 
+(
+    tipo_de_cuenta INTEGER
+)
 
