@@ -25,14 +25,6 @@ VALUES 	("ahorro en Pesos"),
 	("corriente en dolares"),
 	("inversion");
 
-CREATE TABLE tarjeta 
-(	numero char not null CHECK(length(numero)<= 20),
-	CVV INTEGER,
-	Fecha_Otorgamiento date no null,
-	fecha_Expiracion date no null,
-    tipo_tarjeta TEXT not null,
-
-    );
 
 CREATE TABLE tarjeta 
 (	numero char not null CHECK(length(numero)<= 20),
@@ -65,7 +57,7 @@ UPDATE empleado
 SET employee_hire_date = (substr(employee_hire_date, 7, 4) || '-' || substr(employee_hire_date, 4, 2) || '-' || substr(employee_hire_date, 1, 2)) 
 
 ------------------------insertando los tipos de cuneta -----------------------------
-ALTER TABLE cuenta add tipo;
+/* ALTER TABLE cuenta add tipo;
 insert tabla indi 
 (
     tipo_de_cuenta INTEGER
@@ -107,3 +99,21 @@ insert tabla indi
     tipo_de_cuenta INTEGER
 )
 
+----------------
+
+CREATE TABLE indi (
+	id INTEGER
+	tipo INTEGER
+);
+----inserto datos tipos ------
+
+SELECT cuenta join indi on cuenta.account_id=indi.id
+set cuenta.tipo=indi.tipo; */
+
+
+-------------- problematica 4 --------------------
+---------------------1----------------------------
+SELECT count (customer_id), branch_id from cliente GROUP by branch_id ORDER by count (customer_id) DESC
+---------------------2----------------------------
+SELECT  count(employee_id),branch_id from empleado GROUP by branch_id 
+---------------------3----------------------------
