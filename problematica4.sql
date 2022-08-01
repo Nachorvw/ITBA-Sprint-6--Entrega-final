@@ -91,3 +91,5 @@ INSERT INTO moviminetos(identificacion,nro_cuenta,monto,tipo_operacion,hora)
 VALUES(1,400,1000,'+',datetime('now'));
 
 COMMIT;
+
+rollback;
